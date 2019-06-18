@@ -20,12 +20,8 @@ a{
 height: 84.4vh;
 }
 .header{
-  /* width: 100%; */
+  width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
-}
-.header img{
-
-
 }

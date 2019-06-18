@@ -1,13 +1,16 @@
 @media (max-width: 900px)
 {
+
   body{
     margin: 0;
+  }
+  header, footer{
     width: 100vw;
   }
 .content{
   width: 100%;
   height: 100%;
-  margin: 0px 15px;
+  /* margin: 0px 15px; */
   display: block;
   }
   .allContainer {
@@ -15,7 +18,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 15px 0;
+    /* margin: 15px 0; */
   }
 .button {
   width: 20%;
