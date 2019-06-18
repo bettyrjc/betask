@@ -1,0 +1,36 @@
+*{
+  margin:0;
+}
+h1{
+  color: lightgray;
+  font-size: 3em;
+}
+p{
+  color: lightgray;
+  font-size: 2em;
+}
+a{
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.content{
+  background-image: url("../all.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--azul);
+  background: var(--azul);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  color:white;
+}

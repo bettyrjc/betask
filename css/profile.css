@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?s93ts2');
+  src:  url('fonts/icomoon.eot?s93ts2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?s93ts2') format('truetype'),
+    url('fonts/icomoon.woff?s93ts2') format('woff'),
+    url('fonts/icomoon.svg?s93ts2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark:before {
+  content: "\e900";
+}
+.icon-close:before {
+  content: "\e901";
+}
+body{
+  font-family: monospace;
+  background: #F4FAF2;
+}
+
+h3{
+  margin: 0;
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 1.5em;
+  color: #F06650;
+    letter-spacing: 1px;
+}
+li{
+  list-style: none;
+}
+span{
+  margin-top: 5%;
+  font-size: 10px
+}
+.header{
+  justify-content: space-between;
+}
+.profile_user{
+  margin: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile_user p{
+  font-size: 20px;
+
+}
+.perfil{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.success, .error {
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+.success {
+  background: green;
+}
+
+/* .error {
+  background: red;
+} */
+.header, .footer{
+  z-index: 2;
+}
+.content{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 30% 10%;
+}
+/* .container{
+  border: 1px solid red;
+} */
+.containerOne{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 55% 45%;
+}
+
+/* container task note documents */
+.one{
+  width: 100%;
+  height: 100%;
+}
+
+/* task */
+.task{
+  overflow-y: auto;
+}
+.tasksContainer{
+  overflow-y: auto;
+  height: 50%;
+  position: absolute;
+  bottom: 1;
+  /* left:-1000px; */
+  top: -1500px;
+  border: 1px solid #BDC0C0;
+  padding: 10px 25px;
+  background: white;
+  width: 30%;
+}
+.tasksContainer.active{
+  right: 0;
+  top: 200px;
+}
+.collection {
+      padding-inline-start: 20px;
+  margin: .5rem 0 1rem 0;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.collection .collectionItem {
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 1.5rem;
+    padding: 10px 10px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.secondary-content{
+   color: #E75B44;
+    margin-right: 24px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  float: right;
+}
+/*  Fin task*/
+/*note */
+.note{
+  height: 100%;
+  overflow-y: auto;
+}
+
+.containerNote{
+  margin-left: 20px;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: repeat(4, 160px);
+  grid-template-rows: repeat(1, 150px);
+}
+.noteOne{
+  padding: 3px;
+  overflow-y: auto;;
+  background: rgb(255,250,145);
+  height: 100%;
+  width: 95%;
+}
+/*  Fin de note*/
+
+
+/*  Todo list*/
+.section-btn input{
+  padding: 10px 10px;
+}
+.section-btn{
+  margin-bottom:10px;
+  text-align: center;
+}
+.containerTwo{
+  overflow: auto;
+}
+.todoContainer{
+  height: 100%;
+}
+.title{
+  margin-left: 20px;
+  font-size: 2em;
+}
+/* .btn.button.green{
+  margin-left: 25%;
+  margin-bottom: 5%;
+} */
+.btn.button.green,
+.btn.button.blue {
+  width: 90px;
+}
+.ToDoListContainer{
+  overflow-y: auto;
+  height: 70%;
+  position: absolute;
+  /* left: -1000px; */
+  top: -1500px;
+  border: 1px solid #BDC0C0;
+  padding: 10px 25px;
+  background: white;
+  width: 30%;
+}
+.ToDoListContainer.active{
+  right: 0;
+  top: 210px;
+}
+.title1{
+  margin-top: 10px;
+}
+.input{
+  margin-top: 20px;
+}
+.input input{
+  margin-top: 5px;
+  width: 85%;
+  border: none;
+  border-bottom: 1px solid gray;
+  height: 3em;
+  padding-left: 25px;
+}
+.input label{
+  padding: 8px;
+  left: 0.75rem;
+  font-size: 1.5em;
+  cursor: text;
+  pointer-events: none;
+}
+/* Fin de todo list */
+/*  ALLSection*/
+.allContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button{
+    letter-spacing: 1px;
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 20px;
+  border-color: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 25px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  color:white;
+}
+
+.button:active{
+  transform: scale(0.8);
+}
+.button.green{
+  width: 90%;
+  background: rgb(138,201,18);
+  padding: 6px 15px;
+}
+.button.orange{
+  background: #F06650;
+}
+.button.blue{
+  background: rgb(0,162,232);
+}
+.button.gray{
+  background: gray;
+}
+.btn_todo_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_todo_container .blue{
+  margin-left: 10px;
+}
+/* Fin de all section */
+
+/* note */
+.noteContainer{
+  background-color: #FCFCFC;
+  overflow-y: auto;
+  height: 50%;
+  width:200px;
+  position: absolute;
+  /* left: -1000px; */
+  top: -1500px;
+  border: 1px solid #BDC0C0;
+  padding: 10px 25px;
+  background: white;
+}
+.noteContainer.active{
+  right: 0;
+  top: 210px;
+}

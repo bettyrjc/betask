@@ -1,0 +1,48 @@
+@media (max-width: 900px)
+{
+  body{
+    margin: 0;
+    width: 100vw;
+  }
+.content{
+  width: 100%;
+  height: 100%;
+  margin: 0px 15px;
+  display: block;
+  }
+  .allContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+  }
+.button {
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 0px;
+
+}
+.noteContainer{
+  width: 160px;
+  height: 300px;
+}
+.containerOne{
+  display: block;
+}
+
+.noteContainer.active,
+.tasksContainer.active,
+.ToDoListContainer.active{
+  left: 20px;
+  top: 10px;
+  background: lightgray;
+}
+
+}
+@media (max-width: 720px){
+
+.containerOne{
+  display: block;
+}
+}
