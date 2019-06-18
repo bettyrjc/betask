@@ -1,0 +1,59 @@
+/* responsive */
+@media (max-width: 1100px)
+{
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+  span{
+    font-size: 12px;
+    color: #000;
+  }
+  .container{
+    overflow-x: hidden;
+    left: 0;
+    margin-left: 3%;
+    top: 2%;
+    width: 700px;
+  }
+}
+@media (max-width: 900px)
+{
+
+  .container{
+    left: 0;
+    top: 2%;
+    width: 650px;
+  }
+}
+@media (max-width: 700px)
+{
+
+  .container{
+    left: 0%;
+    margin-left: 3%;
+    width: 500px;
+  }
+  .form-container form{
+    padding: 5px;
+  }
+}
+@media (max-width : 500px){
+  button{
+    padding: 12px 20px;
+  }
+  .container{
+    margin-left: 4%;
+    width: 400px;
+  }
+}
+@media (max-width : 400px){
+  .overlay-panel{
+    padding: 0;
+  }
+  .container{
+    font-size: 14px;
+    margin-left: 10%;
+    width: 300px;
+  }
+}
