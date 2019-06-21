@@ -34,3 +34,48 @@ a{
   transition: transform 80ms ease-in;
   color:white;
 }
+.iteratorCon{
+  background-color: gray;
+  height: 400px;
+}
+.iteratorCon h1, .iteratorCon p{
+  color: white;
+}
+.iteratorCon h1{
+  text-align: center;
+}
+.iteratorCon p{
+  margin: 5px 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.iteratorCon ul{
+  text-align: center;
+  background: lightgray;
+  list-style-type: none;
+  font-size: 22px;
+  color: gray;
+  margin: 15px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+.iteratorCon img{
+  text-align: center;
+}
+.iteratorCon button{
+  letter-spacing: 1px;
+width: 80%;
+margin-top: 20px;
+border-radius: 20px;
+border-color: transparent;
+font-size: 12px;
+font-weight: bold;
+padding: 6px 25px;
+text-transform: uppercase;
+transition: transform 80ms ease-in;
+color:white;
+width: 90%;
+background: rgb(138,201,18);
+padding: 6px 15px;
+margin-left: 40px;
+}
