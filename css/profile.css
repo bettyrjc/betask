@@ -135,7 +135,7 @@ span{
 }
 .tasksContainer.active{
   right: 0;
-  top: 200px;
+  top: 10px
 }
 .collection {
       padding-inline-start: 20px;
@@ -223,7 +223,7 @@ span{
 }
 .ToDoListContainer.active{
   right: 0;
-  top: 210px;
+  top: 10px;
 }
 .title1{
   margin-top: 10px;
@@ -300,10 +300,14 @@ span{
 }
 .noteContainer.active{
   right: 0;
-  top: 210px;
+  top: 10px;
 }
 .noteOne.delete-item a{
   margin-right: 5px !important;
+}
+ textarea{
+ width: 100%;
+ height: 80%;
 }
 /* botones finish */
 

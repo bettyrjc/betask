@@ -21,6 +21,7 @@
   display: block;
   }
   .allContainer {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,8 +35,8 @@
 
 }
 .noteContainer{
-  width: 160px;
-  height: 300px;
+  width: 260px;
+  height: 400px;
 }
 .containerOne{
   display: block;
@@ -47,6 +48,7 @@
   left: 20px;
   top: 10px;
   background: lightgray;
+  width: 80% !important;
 }
 
 }
@@ -55,4 +57,5 @@
 .containerOne{
   display: block;
 }
+
 }
