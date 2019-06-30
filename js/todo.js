@@ -124,7 +124,7 @@ class UI {
       const divnote = document.createElement('div');
       divnote.className = 'noteOne';
       divnote.innerHTML = `
-      <a href="#" class="delete-item secondary-content"><i class=" icon icon-close"></i></a>
+      <a href="#" class="delete-item secondary-content"><i class=" icon icon-close"></i></a><br>
       <p>${list.note}</p>
       `;
       note_list.appendChild(divnote)

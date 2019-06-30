@@ -154,7 +154,7 @@ span{
 }
 .secondary-content{
    color: #1399E9;
-    margin-right: 24px;
+    margin-right: 10px;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
   float: right;
@@ -302,7 +302,9 @@ span{
   right: 0;
   top: 210px;
 }
-
+.noteOne.delete-item a{
+  margin-right: 5px !important;
+}
 /* botones finish */
 
 /* .finishAll.active{
