@@ -246,4 +246,14 @@ document.getElementById('noteIdProfile').addEventListener('click', function(e){
   // Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
   e.preventDefault();
 
-})
+});
+
+
+// eliminando modales
+document.getElementById('noteIdProfile').addEventListener('click', function(e){
+  const ui = new UI();
+  ui.deleteList(e.target);
+  // Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+  e.preventDefault();
+
+});

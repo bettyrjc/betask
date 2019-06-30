@@ -1,8 +1,9 @@
 :root{
 --height: 70px;
---fooHe: #FF8C73;
---azul:#E66465;
+--fooHe:rgba(0,0,0,0.75);
+--azul:rgba(17,65,118, 0.8);
 }
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap');
 *{
   margin: 0px;
 }
@@ -15,6 +16,7 @@ a{
   z-index: 1;
   height: var(--height);
   background:var(--fooHe);
+  color: white;
 }
 .content{
 height: 84.4vh;
@@ -24,4 +26,19 @@ height: 84.4vh;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.button.green{
+  width: 90%;
+  background: rgb(138,201,18);
+  padding: 6px 15px;
+}
+.button.orange{
+  background: #fe9b04;
+}
+.button.blue{
+  background: rgb(0,162,232);
+}
+.button.gray{
+  background: gray;
 }

@@ -2,31 +2,119 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Your tasks organizator</title>
+    <title>Perfil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/allcss.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <header class="header">
-      <img src="img/logo.png" alt="logo">
-    </header>
-
-    <div class="content">
-      <h1>Welcome!</h1>
-      <p>Your favorite writer task, enjoy your experience</p>
-      <div class="btn-conatiner">
-        <button type="button" class="btn btn-1"><a href="inUp.html" class="btn">Sign In/ Sign Up</a></button>
+      <h1>Betask</h1>
+      <div class="profile_user">
+        <img src="img/perfil.jpg" alt="perfil" class="perfil">
+        <p>Betty Jimenez</p>
       </div>
-    </div>
-    <div class="iteratorCon" id="iterator_container">
-        <h1>Maybe they are your friends!</h1>
-        <p>Share your activities with your friends.</p>
-        <div class="iterator_class" id="iterator">
+    </header>
+    <div class="content">
+      <section class="container containerOne">
+        <div class="one task" >
+          <h3 class="title_main">Task list!</h3>
+          <ul  class="collection" id="OneTask">
+          </ul>
         </div>
-        <button id="button" name="button" class="green">NEXT</button>
+
+        <div class="one note">
+          <h3 class="title_main">Notes</h3>
+          <div class="containerNote" id="noteIdProfile">
+          </div>
+        </div>
+      </section>
+      <!-- Profile to do list -->
+      <section class="container containerTwo todo-list" >
+        <h3  class="title_main">To do list!</h3>
+        <div class="todoContainer">
+          <div class="todoListContainerOne" id="toDoCont">
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="container allContainer">
+        <button type="button" id="orange"class="button orange">To Do</button>
+        <button type="button" id="blue" class="button blue">Task</button>
+        <button type="button" id="gray" class="button gray">Notes</button>
+        <!-- <button type="button" id="green" class="button green">Documents</button> -->
+      </section>
+  <!-- To do list, form -->
+  <div class="ToDoListContainer" id="todo_">
+
+
+      <form id="TodoForm">
+          <a href="#" class="delete-item secondary-content" id="delete_todo"><i class=" icon icon-close"></i></a>
+        <div class="input">
+          <label for="title">Task's Title</label>
+          <input type="text" id="title">
+        </div>
+        <div class="input">
+          <label for="list">Sub-task</label>
+          <input type="text" id="listO" class="list">
+        </div>
+        <div class="input">
+          <label for="list">Sub-task</label>
+          <input type="text" id="listT" class="list">
+        </div>
+        <div class="input">
+          <label for="list">Sub-task</label>
+          <input type="text" id="listTh" class="list">
+        </div>
+        <div class='section-btn'>
+          <input type="submit" class="button btn blue" value="submit">
+        </div>
+      </form>
+
+    <div class="containerTwoToDoList" id="ToDoListId">
+      <span>Recuerda dividir tu que hacer principal en tres, es lo màs recomendable</span>
     </div>
+  </div>
+  <!-- end To do list, form -->
+  <!-- Tasks form -->
+      <div class="tasksContainer id="task_">
+          <a href="#" class="delete-item secondary-content" id="delete_item"><i class=" icon icon-close"></i></a>
+          <form id="TaskForm">
+            <div class="input">
+              <label for="title">Write your task</label>
+              <input type="text" id="task-id">
+            </div>
+            <div class="section-btn">
+              <input type="submit" class="button btn blue" value="submit">
+            </div>
+          </form>
+        </div>
+  <!--end task form  -->
+  <!--  note fill-->
+  <div class="noteContainer" id="note_">
+      <a href="#" class="delete-item secondary-content" id="delete_note"><i class=" icon icon-close"></i></a>
+    <h3>write your note</h3>
+    <form class="noteContainerForm" id="noteCont">
+      <textarea  rows="10" cols="20" id="noteInput"></textarea>
+      <div class='section-btn'>
+        <input type="submit" class="button btn blue" value="submit">
+      </div>
+    </form>
+  </div>
+  <!-- wnd note fill -->
+</div>
     <footer class="footer">
     </footer>
-    <script src="js/iterator.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/profile.js"></script>
   </body>
 </html>

@@ -38,3 +38,27 @@ document.getElementById('gray').addEventListener('click', () =>{
     note.classList.add('active');
   }
 })
+// elimando con la equis
+document.querySelector('#delete_item').addEventListener('click', ()=>{
+  console.log(' clicke en la equis');
+
+  if (taskList.classList.contains('active')) {
+    taskList.classList.remove('active');
+  }
+})
+// elimando to do
+document.querySelector('#delete_todo').addEventListener('click', ()=>{
+  console.log(' clicke en la equis');
+
+  if (toDoList.classList.contains('active')) {
+    toDoList.classList.remove('active');
+  }
+})
+// elimando note
+document.querySelector('#delete_note').addEventListener('click', ()=>{
+  console.log(' clicke en la equis');
+
+  if (note.classList.contains('active')) {
+    note.classList.remove('active');
+  }
+})
